@@ -1,16 +1,6 @@
 ---@type LazySpec
 return {
   {
-    "kylechui/nvim-surround",
-    version = "*", -- Use for stability; omit to use `main` branch for the latest features
-    event = "VeryLazy",
-    config = function()
-      require("nvim-surround").setup {
-        -- Configuration here, or leave empty to use defaults
-      }
-    end,
-  },
-  {
     "windwp/nvim-autopairs",
     config = function(plugin, opts)
       require "astronvim.plugins.configs.nvim-autopairs"(plugin, opts) -- include the default astronvim config that calls the setup call
@@ -38,5 +28,9 @@ return {
         Rule("a", "a", "-vim")
       )
     end,
+  },
+  {
+    "rcarriga/nvim-notify",
+    opts = function(_, opts) opts.render = "wrapped-compact" end,
   },
 }
