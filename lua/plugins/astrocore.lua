@@ -34,7 +34,6 @@ return {
       },
     },
     -- Mappings can be configured through AstroCore as well.
-    -- NOTE: keycodes follow the casing in the vimdocs. For example, `<Leader>` must be capitalized
     mappings = {
       -- first key is the mode
       n = {
@@ -42,6 +41,10 @@ return {
         ["<Leader>b"] = {
           function() vim.cmd "Neotree source=buffers reveal=true position=left" end,
           desc = "Neo-tree Buffers",
+        },
+        ["<Leader>r"] = {
+          function() vim.cmd "AstroRoot" end,
+          desc = "Detect root folder",
         },
       },
     },

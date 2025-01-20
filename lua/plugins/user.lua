@@ -31,6 +31,11 @@ return {
   },
   {
     "rcarriga/nvim-notify",
-    opts = function(_, opts) opts.render = "wrapped-compact" end,
+    opts = function(_, opts)
+      opts.render = "wrapped-compact"
+      opts.fps = 60
+      opts.timeout = 500
+      opts.stages = "fade"
+    end,
   },
 }
