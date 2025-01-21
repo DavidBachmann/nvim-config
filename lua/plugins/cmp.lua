@@ -14,7 +14,6 @@ return {
           }
 
           local source_name = entry.source:get_debug_name()
-          require "notify"(source_name)
 
           -- Return false if the source is in our filtered table
           return not filtered_sources[source_name]
