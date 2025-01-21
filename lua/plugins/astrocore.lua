@@ -42,10 +42,6 @@ return {
           function() vim.cmd "Neotree source=buffers reveal=true position=left" end,
           desc = "Neo-tree Buffers",
         },
-        ["<Leader>r"] = {
-          function() vim.cmd "AstroRoot" end,
-          desc = "Detect root folder",
-        },
       },
     },
   },
