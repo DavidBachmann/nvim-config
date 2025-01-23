@@ -5,7 +5,7 @@ return {
   opts = {
     -- Configure core features of AstroNvim
     features = {
-      autopairs = true, -- enable autopairs at start
+      autopairs = false, -- enable autopairs at start
       cmp = true, -- enable completion at start
       diagnostics_mode = 3, -- diagnostic mode on start (0 = off, 1 = no signs/virtual text, 2 = no virtual text, 3 = on)
       highlighturl = true, -- highlight URLs at start
@@ -33,9 +33,7 @@ return {
         -- This can be found in the `lua/lazy_setup.lua` file
       },
     },
-    -- Mappings can be configured through AstroCore as well.
     mappings = {
-      -- first key is the mode
       n = {
         ["<Leader>a"] = { desc = "Harpoon functions" },
         ["<Leader>b"] = {

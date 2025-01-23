@@ -31,6 +31,7 @@ return {
         table.insert(file_paths, item.value)
       end
 
+      -- Use telescope picker, make buffers deletable with `dd`
       require("telescope.pickers")
         .new({}, {
           prompt_title = "Harpoon",
