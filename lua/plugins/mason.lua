@@ -6,7 +6,8 @@ return {
     opts = {
       ensure_installed = {
         "lua_ls",
-        "ts_ls",
+        -- "ts_ls",
+        -- add more arguments for adding more language servers
       },
     },
   },
@@ -18,7 +19,8 @@ return {
       ensure_installed = {
         "stylua",
         "prettier",
-        -- "eslint",
+        "eslint",
+        -- add more arguments for adding more null-ls sources
       },
     },
   },

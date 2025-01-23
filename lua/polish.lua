@@ -15,10 +15,3 @@ require("telescope").setup {
     color_devicons = true,
   },
 }
-
-local function visual_paste_without_yank()
-  vim.fn.setreg("x", vim.fn.getreg "*")
-  vim.api.nvim_paste(vim.fn.getreg "*", {}, -1)
-  vim.fn.setreg("*", vim.fn.getreg "x")
-end
-vim.keymap.set("v", "p", visual_paste_without_yank, { noremap = true, silent = true })
