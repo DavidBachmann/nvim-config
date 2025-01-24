@@ -11,4 +11,6 @@ return {
   { "stevearc/resession.nvim", enabled = false },
   -- Don't hijack jk and jj
   { "max397574/better-escape.nvim", enabled = false },
+  -- I never see this
+  { "goolord/alpha-nvim", enabled = false },
 }
