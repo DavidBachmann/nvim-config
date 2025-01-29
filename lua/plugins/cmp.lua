@@ -18,7 +18,8 @@ return {
           return not filtered_sources[source_name]
         end,
       },
-      { name = "path", priority = 250 },
+      { name = "path", priority = 200 },
+      { name = "buffer", priority = 100 },
     }
   end,
 }
