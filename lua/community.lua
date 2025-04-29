@@ -9,4 +9,6 @@ return {
   { import = "astrocommunity.lsp.garbage-day-nvim" },
   { import = "astrocommunity.lsp.lsp-signature-nvim" },
   { import = "astrocommunity.lsp.nvim-lsp-endhints" },
+  { import = "astrocommunity.editing-support.ultimate-autopair-nvim" },
+  { import = "astrocommunity.editing-support.quick-scope" },
 }

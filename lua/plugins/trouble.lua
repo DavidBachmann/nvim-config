@@ -34,6 +34,7 @@ return {
       auto_close = true,
       warn_no_results = false,
       auto_jump = true,
+      pinned = true,
       win = { position = "right", size = 0.333 },
       icons = {
         indent = {
@@ -48,19 +49,5 @@ return {
   end,
   specs = {
     { "lewis6991/gitsigns.nvim", optional = true, opts = { trouble = true } },
-    {
-      "folke/edgy.nvim",
-      optional = true,
-      opts = function(_, opts)
-        if not opts.bottom then opts.bottom = {} end
-        table.insert(opts.bottom, "Trouble")
-      end,
-    },
-    {
-      "catppuccin",
-      optional = true,
-      ---@type CatppuccinOptions
-      opts = { integrations = { lsp_trouble = true } },
-    },
   },
 }
